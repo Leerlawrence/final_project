@@ -1,0 +1,90 @@
+<html>	
+
+
+<head><script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script></head>
+
+<body>
+
+<script type="text/javascript">
+// function ainitialize() { 
+//  var myOptions = {
+//  	zoom: 12,
+//  	center: new google.maps.LatLng(55.97,-3.19),mapTypeId: google.maps.MapTypeId.ROADMAP}   
+//  	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);} 
+
+// var marker = new google.maps.Marker({
+//   position: new google.maps.LatLng(55.97, -3.19),
+//   map: map,
+//   title: 'Edinburgh'
+// });
+// </scripta>
+
+function initialize() {
+var myLatLng1 = {lat: 55.97, lng: -3.19};
+var myLatLng2 = {lat: 55.83, lng: -4.25};
+var myLatLng3 = {lat: 55.83, lng: -3.463796};
+
+  var map = new google.maps.Map(document.getElementById('map_canvas'), {
+    zoom: 12,
+    center: myLatLng1
+  });
+
+  var marker1 = new google.maps.Marker({
+    position: myLatLng1,
+    center: {lat: -55.97, lng: -3.19},
+    map: map,
+
+    animation: google.maps.Animation.DROP,
+    title: 'Edinburgh Falcons'
+  });
+
+  var marker2 = new google.maps.Marker({
+    position: myLatLng2,
+    map: map,
+    animation: google.maps.Animation.DROP,
+    title: 'Glasgow CSC'
+  });
+
+var marker3 = new google.maps.Marker({
+    position: myLatLng3,
+    map: map,
+    animation: google.maps.Animation.DROP,
+    title: 'Fife CSC'
+  });
+
+var AddMarker = function(){
+
+
+
+}
+
+
+// Define the LatLng coordinates for the polygon's path.
+        // var triangleCoords = [
+        //   {lat: 55.97, lng: -3.19},
+        //   {lat: 55.83, lng: -4.25},
+        //   {lat: 56.082203, lng: -3.463796},
+        //   {lat: 55.97, lng: -3.19}
+        // ];
+
+
+
+//   infowindow1 = new google.maps.InfoWindow();
+// listener = google.maps.event.addListener(marker1, 'click', function() {
+//   infowindow1.setContent("Information for Edinbrgh Falcons!");
+//   infowindow1.open(map,marker1);
+// });
+
+}
+</script>
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhv_CH21aqWgRA5xeYHjV_6MdMc1Irf2Y&callback=initialize">
+ </script>
+
+
+<div id="map_canvas" style="width:900px; height: 800px; border: 2px solid black"></div>
+
+<script type="text/javascript">  initialize();</script>
+
+</body>
+</html>
