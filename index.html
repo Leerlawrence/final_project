@@ -14,8 +14,6 @@ function load_facebook() {
      window.open("https://www.facebook.com/EdinburghFalconsCycleSpeedwayClub");
 };
 
-
-
 function load_news() {
      document.getElementById("content").innerHTML='<object type="text/html" data="./public/news/news.html" style="width:100%; height: 100%;"></object>';
 }
@@ -105,8 +103,8 @@ fbBox {
    top: 0;
 }
 .menuButton {
-	width:9.5%;
-	width:80%;
+	/*width:9.5%;*/
+	width:90%;
 	height:20px;
 	position: relative;
   atop: 50%;
@@ -156,7 +154,7 @@ text-align:center;}
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-top: 10px;
-    height: 70vh;
+    height: 60%;
 }
 
 .container > div {
@@ -168,6 +166,7 @@ text-align:center;}
 }
 .second {
   width:70%;
+ /*height:200;*/
 }
 
 .element {
@@ -175,6 +174,34 @@ text-align:center;}
   top: 40;
   transform: translateY(80%);
 }
+
+
+    .coolLink{
+      display: inline-block;
+        text-decoration: none;
+        color: white;
+        box-shadow: 0px 0px 2px 2px;
+        padding-left: 4px;
+        padding-right: 4px;
+        width:90%;
+        background-color:#166596;
+        font-size: 12pt;
+    }
+
+    .coolLink:hover{
+
+        color: white;
+        text-decoration: none;
+        box-shadow: 0px 0px 4px 4px;
+    }
+   
+    .coolLink:active{
+
+        color: white;
+        text-decoration: none;
+        box-shadow: 0px 0px 19px 19px;
+    }
+
 
 </style>
 <div style="background-image: url(./public/images/extensionbg.jpg); height: 130px; width: 100%; border: 1px solid black; text-align:left"><img src="./public/images/afalconsbg.jpg" />
@@ -210,9 +237,20 @@ text-align:center;}
 <!-- 	</div> -->
 
 <div class="container">
-  <div class="first">News
+  <div class="first" width="150" ><br>
+  <a href="#" class="coolLink" onclick="load_news()"> News </a> <P>
+  <a href="#" class="coolLink" onclick="load_fixtures()"> Fixtures / League </a> <P>
+  <a href="#" class="coolLink" onclick="load_schools()"> Schools League </a> <P>
+  <a href="#" class="coolLink" onclick="load_riders()"> Riders & Officials </a> <P>
+  <a href="#" class="coolLink" onclick="load_thesport()"> History of CS. </a> <P>
+  <a href="#" class="coolLink" onclick="load_photos()"> Photo Gallery </a> <P>
+  <a href="#" class="coolLink" onclick="load_tracks()"> Tracks </a> <P>
+  <a href="#" class="coolLink" onclick="load_links()"> Other Links </a> <P>
+  <a href="#" class="coolLink" onclick="load_contact()"> Contact </a> <P>
+  <a href="#" class="coolLink" onclick="load_facebook()"> Facebook Group </a> <P>
 
-<a href ="#" onclick="load_news()"><button type="button" class="menuButton"> News </button></a> <br><p>
+
+<!-- <a href ="#" class="coolLink" onclick="load_news()"><button type="button" class="menuButton"> News </button></a> <br><p><
 <a href ="#" onclick="load_fixtures()"><button type="button" class="menuButton">Fixtures/League</button></a> <BR><P>
 <a href ="#" onclick="load_schools()"><button type="button" class="menuButton">Schools League</button></a> <br><P>
 <a href ="#" onclick="load_riders()"><button type="button" class="menuButton">Riders & Officials</button></a> <br><P>
@@ -220,10 +258,10 @@ text-align:center;}
 <a href ="#" onclick="load_photos()"><button type="button" class="menuButton">Photo Gallery</button></a><br><P>
 <a href ="#" onclick="load_tracks()"><button type="button" class="menuButton">Tracks</button></a><br><P>
 <!-- <a href ="#" onclick="load_photos()"><button type="button" class="menuButton">Photo Gallery</button></a><p> -->
-<a href ="#" onclick="load_links()"><button type="button" class="menuButton">Links</button></a><br><P>
+<!-- <a href ="#" onclick="load_links()"><button type="button" class="menuButton">Links</button></a><br><P>
 <a href ="#" onclick="load_contact()"><button type="button" class="menuButton">Contact</button></a><p>
 <a href ="#" onclick="load_facebook()"><button type="button" class="menuButton">Facebook Group</button></a>
-<br><p>
+<br><p> --> -->
 <font  style="font-size:15px" color="white">Site visits..</font>
 
 <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=www.edinburghfalcons.com&digit=style/cool-looking/13/&reloads=0" alt="www.reliablecounter.com" title="www.reliablecounter.com" border="0"></a><br /><a href="http://www.analogmix.com/mastering.html" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">mastering album</a>
@@ -232,7 +270,7 @@ text-align:center;}
 <p>
 
   </div>
-  <div class="second" id ="content" ></div>
+  <div class="second" id ="content" height="100"></div>
 
 
 
