@@ -1,0 +1,44 @@
+<style>
+/* unvisited link */
+/*a:link {color: red;
+  font-size:14pt;
+  text-decoration: none;
+}*/
+a:link, a:visited {
+    background-color: #00ffff;
+    color: green;
+    background-color: yellow;
+    padding: 20px 25px;
+    font-size:14pt;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+  font-size:16pt;
+    background-color: yellow;
+}
+/*a {color:darkgray;
+font-size:30pt;}
+text-decoration: none;
+*/
+/* visited link */
+/*a:visited {color: green;
+  font-size:30pt;
+  text-decoration: none;
+}
+*/
+/* mouse over link */
+/*a:hover {color: black;
+  font-size:15pt;
+  text-decoration: none;
+}
+*/
+/* selected link */
+/*a:active {color: blue;
+  font-size:15pt;
+  text-decoration: none;
+}
+*/
+</style>
