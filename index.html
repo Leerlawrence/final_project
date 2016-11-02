@@ -7,7 +7,7 @@
 
 <script>
 function load_fixtures() {
-     document.getElementById("content").innerHTML='<object type="text/html" data="./table.html" style="width:100%; height: 100%;">></object>';
+     document.getElementById("content").innerHTML='<object type="text/html" data="/html/table.html" style="width:100%; height: 100%;">></object>';
 };
 
 function load_facebook() {
@@ -15,28 +15,28 @@ function load_facebook() {
 };
 
 function load_news() {
-     document.getElementById("content").innerHTML='<object type="text/html" data="./public/news/news.html" style="width:100%; height: 100%;"></object>';
+     document.getElementById("content").innerHTML='<object type="text/html" data="news/news.html" style="width:100%; height: 100%;"></object>';
 }
 
 function load_tracks() {
-     document.getElementById("content").innerHTML='<object type="text/html" data="./map.html" style="width:100%; height: 100%;"></object>';
+     document.getElementById("content").innerHTML='<object type="text/html" data="/html/map.html" style="width:100%; height: 100%;"></object>';
 }
 
 function load_thesport() {
-     document.getElementById("content").innerHTML='<object type="text/html" data="./theSport.html" style="width:100%; height: 100%;"></object>';
+     document.getElementById("content").innerHTML='<object type="text/html" data="/html/theSport.html" style="width:100%; height: 100%;"></object>';
 }
 
 function load_riders() {
 	
-     document.getElementById("content").innerHTML='<object type="text/html" data="./riders.html" style="width:100%; height: 100%;"></object>';
+     document.getElementById("content").innerHTML='<object type="text/html" data="/html/riders.html" style="width:100%; height: 100%;"></object>';
 }
 
 function load_schools() {
-     document.getElementById("content").innerHTML='<object type="text/html" data="./scottishSchools.html" style="width:100%; height: 100%;"></object>';
+     document.getElementById("content").innerHTML='<object type="text/html" data="/html/scottishSchools.html" style="width:100%; height: 100%;"></object>';
 }
 
 function load_links() {
-     document.getElementById("content").innerHTML='<object type="text/html" data="./links.html" style="width:100%; height: 100%;"></object>';
+     document.getElementById("content").innerHTML='<object type="text/html" data="/html/links.html" style="width:100%; height: 100%;"></object>';
 }
 
 function load_contact() {
@@ -46,7 +46,7 @@ function load_contact() {
 
 function load_photos() {
   
-     document.getElementById("content").innerHTML='<object type="text/html" data="./gallery.html" style="width:100%; height: 100%;"></object>';
+     document.getElementById("content").innerHTML='<object type="text/html" data="/html/gallery.html" style="width:100%; height: 100%;"></object>';
 }
 
 
@@ -105,7 +105,7 @@ fbBox {
 .menuButton {
 	/*width:9.5%;*/
 	width:90%;
-	height:20px;
+	height:40px;
 	position: relative;
   atop: 50%;
   afont-style: italic;
@@ -134,6 +134,7 @@ text-align:center;}
 
 #divleft{
       width: 100px;
+      height : 100%;
       float: left;
       //border-color:black;
         }
@@ -148,17 +149,19 @@ text-align:center;}
 
        .container {
   display:flex;
+  /*display:block;*/
   justify-content:center;
 }
 #content{
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-top: 10px;
-    height: 60%;
+    height: 65%;
 }
 
 .container > div {
   margin:10px;
+  height:70%;
   background-color:#font-familyffff;
 }
 .first, .third {
@@ -185,7 +188,7 @@ text-align:center;}
         padding-right: 4px;
         width:90%;
         background-color:#166596;
-        font-size: 12pt;
+        font-size: 14pt;
     }
 
     .coolLink:hover{
@@ -204,26 +207,26 @@ text-align:center;}
 
 
 </style>
-<div style="background-image: url(./public/images/extensionbg.jpg); height: 130px; width: 100%; border: 1px solid black; text-align:left"><img src="./public/images/afalconsbg.jpg" />
+<div style="background-image: url(images/extensionbg.jpg); height: 130px; width: 100%; border: 1px solid black; text-align:left"><img src="images/afalconsbg.jpg" />
 
 </div>
-<!-- <div class="fbBox"><a href="https://www.facebook.com/EdinburghFalconsCycleSpeedwayClub" ><img src="./public/images/fbook.gif" /></a></div> -->
+<!-- <div class="fbBox"><a BRef="https://www.facebook.com/EdinburghFalconsCycleSpeedwayClub" ><img src="images/fbook.gif" /></a></div> -->
 
 
 
 <!-- <div id="topBar" style="border: thin solid red" width='100%' >  -->
 	<!-- //<div style="background-color:#EEEEEE; border-radius:20px; height:25; valign:middle; align:center; border: 1px red solid;"> -->
 		<center>
-<!-- <a href ="#" onclick="load_news()"><button type="button" class="menuButton"> News </button></a>
-<a href ="#" onclick="load_fixtures()"><button type="button" class="menuButton">Fixtures/League</button></a> 
-<a href ="#" onclick="load_schools()"><button type="button" class="menuButton">Schools League</button></a> 
-<a href ="#" onclick="load_members()"><button type="button" class="menuButton">Members</button></a> 
-<a href ="#" onclick="load_thesport()"><button type="button" class="menuButton">The Sport</button></a> 
-<a href ="#" onclick="load_photos()"><button type="button" class="menuButton">Photo Gallery</button></a>
-<a href ="#" onclick="load_tracks()"><button type="button" class="menuButton">Tracks</button></a>
-<a href ="#" onclick="load_photos()"><button type="button" class="menuButton">Photo Gallery</button></a>
-<a href ="#" onclick="load_links()"><button type="button" class="menuButton">Links</button></a>
-<a href ="#" onclick="load_contact"><button type="button" class="menuButton">Contact</button></a> -->
+<!-- <a BRef ="#" onclick="load_news()"><button type="button" class="menuButton"> News </button></a>
+<a BRef ="#" onclick="load_fixtures()"><button type="button" class="menuButton">Fixtures/League</button></a> 
+<a BRef ="#" onclick="load_schools()"><button type="button" class="menuButton">Schools League</button></a> 
+<a BRef ="#" onclick="load_members()"><button type="button" class="menuButton">Members</button></a> 
+<a BRef ="#" onclick="load_thesport()"><button type="button" class="menuButton">The Sport</button></a> 
+<a BRef ="#" onclick="load_photos()"><button type="button" class="menuButton">Photo Gallery</button></a>
+<a BRef ="#" onclick="load_tracks()"><button type="button" class="menuButton">Tracks</button></a>
+<a BRef ="#" onclick="load_photos()"><button type="button" class="menuButton">Photo Gallery</button></a>
+<a BRef ="#" onclick="load_links()"><button type="button" class="menuButton">Links</button></a>
+<a BRef ="#" onclick="load_contact"><button type="button" class="menuButton">Contact</button></a> -->
 
 
 
@@ -238,52 +241,55 @@ text-align:center;}
 
 <div class="container">
   <div class="first" width="150" ><br>
-  <a href="#" class="coolLink" onclick="load_news()"> News </a> <P>
-  <a href="#" class="coolLink" onclick="load_fixtures()"> Fixtures / League </a> <P>
-  <a href="#" class="coolLink" onclick="load_schools()"> Schools League </a> <P>
-  <a href="#" class="coolLink" onclick="load_riders()"> Riders & Officials </a> <P>
-  <a href="#" class="coolLink" onclick="load_thesport()"> History of CS. </a> <P>
-  <a href="#" class="coolLink" onclick="load_photos()"> Photo Gallery </a> <P>
-  <a href="#" class="coolLink" onclick="load_tracks()"> Tracks </a> <P>
-  <a href="#" class="coolLink" onclick="load_links()"> Other Links </a> <P>
-  <a href="#" class="coolLink" onclick="load_contact()"> Contact </a> <P>
-  <a href="#" class="coolLink" onclick="load_facebook()"> Facebook Group </a> <P>
+  <a BRef="#" class="coolLink" onclick="load_news()"> News </a> <P><P>
+  <BR>
+  <a BRef="#" class="coolLink" onclick="load_fixtures()"> Fixtures / League </a> <P><P><BR>
+  <a BRef="#" class="coolLink" onclick="load_schools()"> Schools League </a> <P><P><BR>
+  <a BRef="#" class="coolLink" onclick="load_riders()"> Riders & Officials </a> <P><P><BR>
+  <a BRef="#" class="coolLink" onclick="load_thesport()"> History of CS. </a> <P><P><BR>
+  <a BRef="#" class="coolLink" onclick="load_photos()"> Photo Gallery </a> <P><p><BR>
+  <a BRef="#" class="coolLink" onclick="load_tracks()"> Tracks </a> <P><BR>
+  <a BRef="#" class="coolLink" onclick="load_links()"> Other Links </a> <P><BR>
+  <a BRef="#" class="coolLink" onclick="load_contact()"> Contact </a> <P><BR>
+  <a BRef="#" class="coolLink" onclick="load_facebook()"> Facebook Group </a> <P>
 
 
-<!-- <a href ="#" class="coolLink" onclick="load_news()"><button type="button" class="menuButton"> News </button></a> <br><p><
-<a href ="#" onclick="load_fixtures()"><button type="button" class="menuButton">Fixtures/League</button></a> <BR><P>
-<a href ="#" onclick="load_schools()"><button type="button" class="menuButton">Schools League</button></a> <br><P>
-<a href ="#" onclick="load_riders()"><button type="button" class="menuButton">Riders & Officials</button></a> <br><P>
-<a href ="#" onclick="load_thesport()"><button type="button" class="menuButton">The Sport</button></a> <br><P>
-<a href ="#" onclick="load_photos()"><button type="button" class="menuButton">Photo Gallery</button></a><br><P>
-<a href ="#" onclick="load_tracks()"><button type="button" class="menuButton">Tracks</button></a><br><P>
-<!-- <a href ="#" onclick="load_photos()"><button type="button" class="menuButton">Photo Gallery</button></a><p> -->
-<!-- <a href ="#" onclick="load_links()"><button type="button" class="menuButton">Links</button></a><br><P>
-<a href ="#" onclick="load_contact()"><button type="button" class="menuButton">Contact</button></a><p>
-<a href ="#" onclick="load_facebook()"><button type="button" class="menuButton">Facebook Group</button></a>
+<!-- <a BRef ="#" class="coolLink" onclick="load_news()"><button type="button" class="menuButton"> News </button></a> <br><p><
+<a BRef ="#" onclick="load_fixtures()"><button type="button" class="menuButton">Fixtures/League</button></a> <BR><P>
+<a BRef ="#" onclick="load_schools()"><button type="button" class="menuButton">Schools League</button></a> <br><P>
+<a BRef ="#" onclick="load_riders()"><button type="button" class="menuButton">Riders & Officials</button></a> <br><P>
+<a BRef ="#" onclick="load_thesport()"><button type="button" class="menuButton">The Sport</button></a> <br><P>
+<a BRef ="#" onclick="load_photos()"><button type="button" class="menuButton">Photo Gallery</button></a><br><P>
+<a BRef ="#" onclick="load_tracks()"><button type="button" class="menuButton">Tracks</button></a><br><P>
+<!-- <a BRef ="#" onclick="load_photos()"><button type="button" class="menuButton">Photo Gallery</button></a><p> -->
+<!-- <a BRef ="#" onclick="load_links()"><button type="button" class="menuButton">Links</button></a><br><P>
+<a BRef ="#" onclick="load_contact()"><button type="button" class="menuButton">Contact</button></a><p>
+<a BRef ="#" onclick="load_facebook()"><button type="button" class="menuButton">Facebook Group</button></a>
 <br><p> --> -->
 <font  style="font-size:15px" color="white">Site visits..</font>
 
-<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=www.edinburghfalcons.com&digit=style/cool-looking/13/&reloads=0" alt="www.reliablecounter.com" title="www.reliablecounter.com" border="0"></a><br /><a href="http://www.analogmix.com/mastering.html" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">mastering album</a>
+<a BRef="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=www.edinburghfalcons.com&digit=style/cool-looking/13/&reloads=0" alt="www.reliablecounter.com" title="www.reliablecounter.com" border="0"></a><br /><a BRef="http://www.analogmix.com/mastering.html" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">mastering album</a>
 <br>
-<a href="http://www.cyclespeedwayhistory.org.uk/" target="_blank"><img src="./public/images/oldCS.jpg" width="90%" /></a><P>
+<!-- <a BRef="http://www.cyclespeedwayhistory.org.uk/" target="_blank"><img src="images/oldCS.jpg" width="90%" /></a><P> -->
 <p>
 
   </div>
-  <div class="second" id ="content" height="100"></div>
+  <div class="second" id ="content" height="100%"></div>
 
 
 
-  <div class="third"><a href="http://www.archie-wilkinson.co.uk" target="_blank"><img src="./public/images/yellowarchie.jpg" width="90%" /></a>
+  <div class="third"><a href="http://www.archie-wilkinson.co.uk" target="_blank"><img src="images/yellowarchie.jpg" width="90%" /></a>
   	
-    <a href="http://www.3318news.co.uk/" target="_blank"><img src="./public/images/3318news.jpg" width="90%" /></a><P>
+    <a href="http://www.3318news.co.uk/" target="_blank"><img src="images/3318news.jpg" width="90%" /></a><BR><BR>
 
-<a href="http://www.bikemielec.com/en/speedrower.php" target="_blank"><img src="./public/images/mielec.jpg" width="90%" /></a><p>
+<a href="http://www.bikemielec.com/en/speedrower.php" target="_blank"><img src="images/mielec.jpg" width="90%" /></a><BR><BR>
 
-<a href="https://www.youtube.com/embed/ia4Wydv7j1I" target="_blank"><img src="./public/images/youtubeCS.jpg" width="90%" /></a><P>
+<a href="https://www.youtube.com/embed/ia4Wydv7j1I" target="_blank"><img src="images/youtubeCS.jpg" width="90%" /></a><BR>
 
-<a href="http://www.codeclan.com/" target="_blank"><img src="./public/images/codeclan.png" width="90%" /></a><P>
-<!-- <a href="http://www.cyclespeedwayhistory.org.uk/" target="_blank"><img src="./public/images/oldCS.jpg" width="90%" /></a><P> -->
+<a href="http://www.cyclespeedwayhistory.org.uk/" target="_blank"><img src="images/oldCS.jpg" width="90%" /></a><P>
+
+<a href="http://www.codeclan.com/" target="_blank"><img src="images/codeclan.png" width="90%" /></a><P><BR>
+<!-- <a BRef="http://www.cyclespeedwayhistory.org.uk/" target="_blank"><img src="images/oldCS.jpg" width="90%" /></a><P> -->
 
   </div>
 </div>

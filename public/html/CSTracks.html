@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Marker animations with <code>setTimeout()</code></title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #northern-panel,#midlands-panel,#south-panel,#se-panel ,#track-panel{
+        position: absolute;
+        atop: 10px;
+        top:50px;
+        aleft: 20%;
+        width:150px;
+        z-index: 5;
+        background-color: BLUE;
+        padding: 0px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 0  px;
+        padding-left: 0px;
+        amargin-left: -52px;
+      }
+      #northern-panel {
+        //amargin-left: -80px;
+        margin-left: 5px;
+        margin-top:100;
+      }
+
+      #midlands-panel {
+        //margin-left: 40px;
+        margin-left: 5px;
+        margin-top: 30px;
+      }
+
+      #south-panel {
+        //margin-left: 162px;
+        margin-left: 5px;
+        margin-top: 60px;
+      }
+
+      #se-panel {
+        margin-left: 5px;
+        margin-top: 105px;
+      }
+
+      #track-panel {
+        margin-left: 5px;
+        margin-top: 125px;
+      }
+
+      #drop {
+        width:150px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="northern-panel">
+      <button id="drop" onclick="dropNorthern()">Northern League</button>
+    </div>
+    <div id="midlands-panel">
+      <button id="drop" onclick="dropMidlands()">Midlands League</button>
+    </div>
+    <div id="south-panel">
+      <button id="drop" onclick="dropSouth()">South/South Wales<BR> Junior League</button>
+    </div>
+    <div id="se-panel">
+      <button id="drop" onclick="dropSouthEast()">South East</button>
+    </div>
+
+<!-- <div id="track-panel">
+      <button id="drop" onclick="dropTrack(southEast[4])">East London</button>
+    </div> -->
+
+    <div id="map" border-style:solid 12 white></div>
+
+
+
+    <script>
+
+      // If you're adding a number of markers, you may want to drop them on the map
+      // consecutively rather than all at once. This example shows how to use
+      // window.setTimeout() to space your markers' animation.
+
+      var northern = [
+        {lat: 55.97, lng: -3.19},  //edinburgh
+        {lat: 55.83, lng: -4.25},  //glasgow
+        {lat: 56.081796,lng: -3.463807}, //dunfermline
+        {lat: 53.06, lng: -2.22},   //stoke
+        {lat:53.41, lng:-2.14}, //stockport
+        {lat:53.72,lng:-0.43}, //hull
+        {lat:53.58,lng:-2.29}, //bury
+        {lat:53.51,lng:-2.47}, //Astley
+        {lat:55.07,lng: -1.592191} //northumbria
+              ];
+
+      var midlands = [
+        {lat: 52.61, lng:-2.06},// wednesfield
+        {lat: 52.45, lng:-1.49}, //coventry
+        {lat: 52.64, lng:-1.14}, // Leicester
+        {lat: 52.54, lng:-1.89},//birmingham monarchs
+        {lat: 52.58, lng:-2.10}, // east park
+        {lat: 52.391621,lng: -1.372767}, //brandon
+      ];
+
+var southEast = [
+        {lat: 52.09, lng: 1.13},// ipswich
+        {lat: 52.12, lng: 1.09}, //gt blakenham
+        {lat: 52.06, lng: 1.24}, // kesgrave
+        {lat: 52.60, lng: 1.17},//heathersett
+        {lat: 51.515798, lng: 0.031431}, // east london
+        {lat: 52.605661, lng: 1.280373}, //norwich
+        {lat: 50.88, lng: 0.22}, // hellingly
+      ];
+
+    var southAndWales = [
+        {lat: 50.71, lng:-1.97},// poole
+        {lat: 50.70, lng:-3.52}, //exeter
+        {lat: 51.74, lng:-1.17}, // Horspath
+        {lat: 51.57, lng:-2.96},//Newport
+        {lat: 51.57, lng:-1.79}, // swindon
+        
+      ];
+
+
+// var beaches = [
+//   ['Bondi Beach', -33.890542, 151.274856, 4],
+//   ['Coogee Beach', -33.923036, 151.259052, 5],
+//   ['Cronulla Beach', -34.028249, 151.157507, 3],
+//   ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+//   ['Maroubra Beach', -33.950198, 151.259302, 1]
+// ];
+
+
+
+
+      var markers = [];
+      var map;
+var icon = { 
+    url: './images/bikepointer.gif'
+};
+// infowindow1 = new google.maps.InfoWindow();
+// listener = google.maps.event.addListener(marker1, 'click', function() {
+//   infowindow1.setContent("Info Window for Detroit!!");
+//   infowindow1.open(map,marker1);
+// });
+
+
+
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center: {lat: 55.97, lng: -3.19},
+          icon: "./public/images/bikepointer.gif"
+
+        });
+      }
+
+function initMidMap(centerCords) {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          // center: {lat: 52.61, lng:-2.06}
+          center: {centerCoords},
+          icon: "/images/bikepointer.gif"
+        });
+      }
+
+
+    function dropTrack(coords) {
+      alert(coords);
+        clearMarkers();
+        //for (var i = 0; i < northern.length; i++) {
+          addMarkerWithTimeout(coords, 1 * 500);
+        //}
+      }
+
+      function dropNorthern() {
+        clearMarkers();
+        for (var i = 0; i < northern.length; i++) {
+          addMarkerWithTimeout(northern[i], i * 500);
+        }
+      }
+
+      function dropMidlands() {
+        // var centreLocation =  new google.maps.LatLng(lat: 52.61,lng: -2.06);
+        clearMarkers();
+        for (var i = 0; i < midlands.length; i++) {
+          addMarkerWithTimeout(midlands[i], i * 500);
+        }
+        
+      }
+
+      function dropSouthEast() {
+        clearMarkers();
+        for (var i = 0; i < southEast.length; i++) {
+          addMarkerWithTimeout(southEast[i], i * 500);
+         // centreMap(southAndWales[0]);
+        }
+      }
+      function dropSouth() {
+        clearMarkers();
+        for (var i = 0; i < southAndWales.length; i++) {
+          addMarkerWithTimeout(southAndWales[i], i * 500);
+         // centreMap(southAndWales[0]);
+        }
+      }
+
+      // function centerMap(coords) {
+      //   map = new google.maps.Map(document.getElementById('map'), {
+      //     zoom: 6,
+
+      //     center: {coords}
+      //       document.alert(coords)
+      //   });
+      // }
+
+
+      function addMarkerWithTimeout(position, timeout) {
+        window.setTimeout(function() {
+          markers.push(new google.maps.Marker({
+            position: position,
+            map: map,
+            icon: "./public/images/bikepointer3.gif",
+            // animation: google.maps.Animation.DROP,
+          }));
+        }, timeout);
+      }
+
+      function clearMarkers() {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(null);
+        }
+        markers = [];
+      }
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhv_CH21aqWgRA5xeYHjV_6MdMc1Irf2Y&callback=initMap">
+    </script>
+  </body>
+</html>
