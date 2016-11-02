@@ -2,8 +2,16 @@
 img {width:130px;
 height:123px;}
 
+img {max-width:100%;
+  max-height:100%;
+
+box-shadow: 5px 5px 3px #fff;
+  -webkit-box-shadow: 5px 5px 3px #a9a9a9;
+  -moz-box-shadow: 5px 5px 3px #ccc;} 
+
+
 div {
-	
+	/*background-color:black;*/
 	vertical-align:top;
 }
 
@@ -23,7 +31,7 @@ function changeInfo(riderInfo){
 }
 </script>
 
-<Table width="100%" border="3px" Margin="5px"><TD Width="70%">
+<Table width="100%" border="3px" Margin="5px"><TD Width="80%">
 	<div id="" style="overflow-y: scroll; height:100%;">
 <Table> 
 	<!-- <img src="logo1.jpg" onClick='alert("Hello World!")'/> -->
@@ -32,70 +40,78 @@ function changeInfo(riderInfo){
 <TD><CENTER><IMG SRC="/images/members/kamil.jpg">
 </TD><CENTER><TD><IMG SRC="/images/members/lee.jpg"></TD>
 <TD><CENTER><IMG SRC="/images/members/archie.jpg"/>
-</TD><CENTER><TD><IMG SRC="/images/members/craig.jpg"></TD><tr>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Marcin Czarcowski</h1><BR>DOB: 12/12/1990<BR>Country: Poland<BR><BR>Bicycles, music, travels - these are things which rock my boat.")' value='Marcin Czarkowski'/></TD>
-
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Gavin Kennedy<BR>DOB: 12/12/1975<BR>Country: Scotland<BR><BR><B>2014:</B> Represented Scotland in the <B>European Championships</B> in Poland<BR>")' value='Gavin Kennedy'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Kamil Gresla<BR>DOB: 12/12/1975<BR>Country: Poland")' value='Kamil Grezla'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Lee Lawrence</h1><BR>DOB: 25/03/1960<BR>Country: England<BR><br></CENTER><B>2006:</B> Was a member of the winning British Veterans Team<br><BR><B>2013:</B> Represented Scotland in the <B>World Championships</B> in Adelaide, Australia<br><BR><B>2014:</B> Represented Scotland in the <B>European Championships</B> in Poland<BR><BR><B>2015:</B> Became <B>British Veteran Champion<B></B>")' value='Lee Lawrence'/></TD><TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Neil McPherson</h1><BR>DOB: 12/12/1975<BR>Country: Poland")' value='Neil McPherson'/></TD><TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Craig Newsome</h1><BR>DOB: 12/12/1975<BR>Country: Scotland<BR><BR>Falcons no.2 and the most successful Scottish rider of the early noughties. Craig finished 10th in the 2005 World Final in Australia.")' value='Craig Newsome'/></TD></tr>
-
-
+</TD><CENTER><TD><IMG SRC="/images/members/craig.jpg"></TD>
 <TD><CENTER><IMG SRC="/images/members/mikey.jpg">
+<tr>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Marcin Czarcowski</h1></h1><BR>DOB: 12/12/1990<BR>Country: Poland<BR><BR>Bicycles, music, travels - these are things which rock my boat.")' value='Marcin Czarkowski'/></TD>
+
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Gavin Kennedy</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland<BR><BR><B>2014:</B> Represented Scotland in the <B>European Championships</B> in Poland<BR>")' value='Gavin Kennedy'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Kamil Gresla</h1><BR>DOB: 12/12/1975<BR>Country: Poland")' value='Kamil Grezla'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Lee Lawrence</h1></h1><BR>DOB: 25/03/1960<BR>Country: England<BR><br></CENTER><B>2006:</B> Was a member of the winning British Veterans Team<br><BR><B>2013:</B> Represented Scotland in the <B>World Championships</B> in Adelaide, Australia<br><BR><B>2014:</B> Represented Scotland in the <B>European Championships</B> in Poland<BR><BR><B>2015:</B> Became <B>British Veteran Champion<B></B>")' value='Lee Lawrence'/></TD><TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Neil McPherson</h1></h1><BR>DOB: 12/12/1975<BR>Country: Poland")' value='Neil McPherson'/></TD><TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Craig Newsome</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland<BR><BR>Falcons no.2 and the most successful Scottish rider of the early noughties. Craig finished 10th in the 2005 World Final in Australia.")' value='Craig Newsome'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Mikey Hewitson</h1></h1><BR>DOB: 12/12/1990<BR>Country: Scotland<br<br><p>Falcons undisputed no.1 and the highest scoring rider in the league this year")' value='Mikey Hewitson'/></TD></tr>
+
+
+<!-- <TD><CENTER><IMG SRC="/images/members/mikey.jpg"> -->
 </TD><TD><CENTER><IMG SRC="/images/members/Lewis.jpg"></TD>
 <TD><CENTER><IMG SRC="/images/members/Euan.jpg"></TD>
 <TD><CENTER><IMG SRC="/images/members/ciaran.jpg"></TD>
 <TD><CENTER><IMG SRC="/images/members/swanny.jpg"></TD>
-<TD><CENTER><IMG SRC="/images/members/jason.jpg"></TD><tr>
+<TD><CENTER><IMG SRC="/images/members/jason.jpg"></TD>
+<TD><IMG SRC="/images/members/stevie.jpg">
+</TD><TD><IMG SRC="/images/members/johnny.jpg"></TD><tr>
 
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Mikey Hewitson</h1><BR>DOB: 12/12/1990<BR>Country: Scotland<br<br><p>Falcons undisputed no.1 and the highest scoring rider in the league this year")' value='Mikey Hewitson'/></TD>
+<!-- <TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Mikey Hewitson</h1></h1><BR>DOB: 12/12/1990<BR>Country: Scotland<br<br><p>Falcons undisputed no.1 and the highest scoring rider in the league this year")' value='Mikey Hewitson'/></TD> -->
 
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Lewis Foxley</h1><BR>DOB: 12/12/1975<BR>Country: Scotland<BR><BR><B>2014:</B> ")' value='Lewis Foxley'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Lewis Foxley</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland<BR><BR><B>2014:</B> ")' value='Lewis Foxley'/></TD>
 
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Euan Kennedy</h1><BR>DOB: 12/12/1975<BR>Country: Scotland<BR><BR><B>2014:</B> Represented Scotland in the <B>European Championships</B> in Poland<BR> ")' value='Euan Kennedy'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Euan Kennedy</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland<BR><BR><B>2014:</B> Represented Scotland in the <B>European Championships</B> in Poland<BR> ")' value='Euan Kennedy'/></TD>
 
-<!-- <TD><CENTER><input type='button' class='rider' onclick='changeInfo("Euan Kennedy<BR>DOB: 12/12/1975<BR>Country: Scotland<BR><BR>Finished fourth in the Falcons U16 Club Championship in 2012.  Also racked up a couple of high scores for the Falcons Junior side in matches against Queen Anne High School and a Scottish Schools Select 
+<!-- <TD><CENTER><input type='button' class='rider' onclick='changeInfo("Euan Kennedy</h1><BR>DOB: 12/12/1975<BR>Country: Scotland<BR><BR>Finished fourth in the Falcons U16 Club Championship in 2012.  Also racked up a couple of high scores for the Falcons Junior side in matches against Queen Anne High School and a Scottish Schools Select 
 ")' value='Euan Kennedy'/></TD>
  -->
 
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Ciaran Leslie</h1><BR>DOB: 25/03/1960<BR>Country: Scotland<B></B>")' value='Ciaran Leslie'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Ciaran Leslie</h1></h1><BR>DOB: 25/03/1960<BR>Country: Scotland<B></B>")' value='Ciaran Leslie'/></TD>
 
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Neil Swanny Swanson</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Neil Swanson'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Jason Burke</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Jason Burke'/></TD></tr>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Neil Swanny Swanson</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Neil Swanson'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Jason Burke</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Jason Burke'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Stevie Gilroy</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Stevie Gilroy'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Johnny Murphy</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Johnny Murphy'/></TD></tr>
 
 
-<TD><IMG SRC="/images/members/stevie.jpg">
-</TD><TD><IMG SRC="/images/members/johnny.jpg"></TD>
+
 <TD><IMG SRC="/images/members/daniel.jpg"></TD>
 <TD><IMG SRC="/images/members/alisdair.jpg"></TD>
 <TD><IMG SRC="/images/members/james.jpg"></TD>
-<TD><IMG SRC="/images/members/skye.jpg"></TD><tr>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Stevie Gilroy</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Stevie Gilroy'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Johnny Murphy</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Johnny Murphy'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Daniel Ordon</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Daniel Ordon'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Alisdair Foxley</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Alisdair Foxley'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>James Foxley</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='James Foxley'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Skye Mitchell</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Skye Mitchell	'/></TD></TR>
-
+<TD><IMG SRC="/images/members/skye.jpg"></TD>
 <TD><CENTER><IMG SRC="/images/members/alanH.jpg" width="10%"/></TD>
-<TD><IMG SRC="/images/members/johnny.jpg"></TD>
-<TD><IMG SRC="/images/members/daniel.jpg"></TD>
-<TD><IMG SRC="/images/members/alisdair.jpg"></TD>
-<TD><IMG SRC="/images/members/james.jpg"></TD>
-<TD><IMG SRC="/images/members/skye.jpg"></TD><tr>
+<TD><IMG SRC="/images/members/calumC.jpg"></TD>
+<TD><IMG SRC="/images/members/calumS.jpg"></TD><tr>
 
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Alan Hewitson</h1><BR>DOB: 12/12/1957<BR>Country: Scotland<P>Regarded as one of the top commissaires in the sport. Alan is the proud father of Falcon No. 1 Mikey.")' value='Alan Hewitson'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Johnny Murphy</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Johnny Murphy'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Daniel Ordon</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Daniel Ordon'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Alisdair Foxley</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Alisdair Foxley'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>James Foxley</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='James Foxley'/></TD>
-<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Skye Mitchell</h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Skye Mitchell '/></TD></TR>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Daniel Ordon</h1></h1><BR>DOB: 12/12/1975<BR>Country: Poland")' value='Daniel Ordon'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Alisdair Foxley</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Alisdair Foxley'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>James Foxley</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='James Foxley'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Skye Mitchell</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Skye Mitchell	'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Alan Hewitson</h1></h1><BR>DOB: 12/12/1957<BR>Country: Scotland<P>Regarded as one of the top commissaires in the sport. Alan is the proud father of Falcon No. 1 Mikey.")' value='Alan Hewitson'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Calum Cairney</h1><BR>DOB: 01/01/20015<BR>Country: Scotland")' value='Calum Cairney'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Calum Slight</h1></h1><BR>DOB: 12/12/1970<BR>Country: England")' value='Calum Slight'/></TD>
+</TR>
+
+
+<TD><IMG SRC="/images/members/colCairney.jpg"></TD>
+<TD><IMG SRC="/images/members/daveB.jpg"></TD>
+<TD><IMG SRC="/images/members/cavey.jpg"></TD><tr>
+
+
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Colin Cairney</h1></h1><BR>DOB: 12/12/1970<BR>Country: Scotland")' value='Colin Cairney'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Dave Beecroft</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Dave Beecroft'/></TD>
+<TD><CENTER><input type='button' class='rider' onclick='changeInfo("<h1>Ian (Cavey) McKinley</h1></h1><BR>DOB: 12/12/1975<BR>Country: Scotland")' value='Ian McKinlay'/></TD></TR>
 
 
 <!-- <TD>Dave Beecroft</TD><TD>Ewan Kennedy</TD><TD>Ewan Tulloch</TD><TD>Alan Hewitson</TD><TD>Ian McKinlay</TD><TD>Jake Slight</TD><TR>
 <TD>Johnny Murphy</TD><TD>Karina Bird</TD><TD>Lee Lawrence</TD><TD>Louis Kennedy</TD>
 <TD>Mikey Hewitson</td><TD>Neil McPherson</td><TR><TD>Sean Hewitson</td><TD>Stevie  --></td><TD></td><TD></td><TD></td>
 </table></div>
-	<TD valign="top"><u><Center><h3>Details</h3></center></u><CENTER><div id='boldStuff' width="100%"><Center>Select a button on the left to display information about each member.</center></div></td>
+	<TD valign="top" bgcolor="dodgerblue"><u><Center><h3>Details</h3></center></u><CENTER><div id='boldStuff' width="100%"><Center>Select a button on the left to display information about each member.</center></div></td>
 	</table
 
 
